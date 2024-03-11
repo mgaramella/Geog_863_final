@@ -1,10 +1,36 @@
 <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Final Project: Wildfire Clusters</title>
+		<link rel="stylesheet" href="main.css"></link>
+		<link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+		<script src="https://js.arcgis.com/4.28/"></script>
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<h1> Final Project: USA Wildfire Clusters </h1>
 
-<head>
-	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<title> Test commit changes </title>
-</head>
-
-<body>
-	<h1>Its never too late to change</h1>
-</body>
+		<div id="viewDiv"></div>
+	
+		<div id="paneDiv" class="esri-widget">
+			<div>
+				<h2>State Query</h2>
+				<input type='text' id='txtName' placeholder='e.g., US-MA'></input>
+				<button class="esri-widget" id="btnQuery">Map it!</button> <br /><br />
+				<span id='results'></span>
+			</div>
+		</div>  
+		
+		<!-- Adds an info box showing link to source data -->
+		<div id="infoPaneDiv" class="esri-widget">
+			<div>
+			<p>
+				For more information about the USA Wildfires source data from Esri, see<break />:
+				<a href="https://www.arcgis.com/home/item.html?id=d957997ccee7408287a963600a77f61f">USA Wildfires</a>
+			</p>
+			</div>
+		</div>
+	</body>
+</html>
