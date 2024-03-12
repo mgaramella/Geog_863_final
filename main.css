@@ -1,0 +1,33 @@
+
+html,
+
+body,
+	#viewDiv {
+		padding: 0;
+		margin: 35px;
+		height: 95%;
+		width: 95%;
+	}
+	
+	#paneDiv {
+		background-color: dimgray;
+		color: white;
+		padding: 10px;
+		width: 350px;
+	}
+	
+	#infoPaneDiv {
+		float: none;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: white;
+		margin: 35px;
+		height: 2.5%;
+		width: 95%;
+}
+	
+h1, h2 {
+	text-align: center;
+}
+
+
+
